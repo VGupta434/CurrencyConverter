@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*
+{
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+}
+body
+{
+    background: url("../Assets/Images/currency-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.mainHeading
+{
+    color: #FF6C22;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.dropDownContainer
+{
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 5vw;
+}
+
+.dropDownSelector
+{
+    min-width: fit-content;
+    width: 45vw;
+    /* height: 30px; */
+    min-height: fit-content;
+    font-size: medium;
+}
+
+
+.inputContainer
+{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: center;
+    gap: 30px;
+}
+.amountInput
+{
+    width: 50vw;
+    min-width: 120px;
+    height: fit-content;
+    /* background-color: rgb(3, 3, 198); */
+    font-size: xx-large;
+    /* color: #FF6C22; */
+}
+
+.convertButton
+{
+    width: 20vw;
+    min-width: 70px;
+    border: none;
+    background-color: #FF9209;
+    color: #2B3499;
+    font-weight: 800;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+.convertButton:hover
+{
+    background-color: #c86e00;
+    color: #1f2672;
+}
+.convertButton:active
+{
+    transform: scale(0.95);
+}
+
+.resultArea
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: fit-content;
+    /* max-height: fit-content; */
+    /* border: black solid 2px; */
+    background-color: rgb(0, 0, 166);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.hidden
+{
+    display: none;
+}
+
+@media(max-width: 1000px)
+{
+    .dropDownContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.inputContainer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.convertButton
+{
+    width: 30vw;
+    min-width: 100px;
+    min-height: 2.8em;
+}
+}
