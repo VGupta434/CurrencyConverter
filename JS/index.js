@@ -366,6 +366,7 @@ convertButton.addEventListener("click", async () => {
             h2.innerHTML = amount+" "+fromCurrency+" is equivalent to "+convertedAmount+" "+toCurrency
             h2.style.color="#FFD099";
             const resultArea = document.querySelector(".resultArea");
+            resultArea.innerHTML = "";
             resultArea.appendChild(h2);
             resultArea.classList.remove("hidden");
         }
